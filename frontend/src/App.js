@@ -18,7 +18,7 @@ function App() {
         e.preventDefault();
         try {
             const parsedInput = JSON.parse(jsonInput);
-            const apiResponse = await axios.post('https://api-2-r1aj.onrender.com/bfhl', parsedInput); // Calls the backend API
+            const apiResponse = await axios.post('https://backend-bajaj-8uta.onrender.com/bfhl', parsedInput); // Calls the backend API
             setResponse(apiResponse.data);
         } catch (error) {
             alert('Invalid JSON input or error with API call.');
